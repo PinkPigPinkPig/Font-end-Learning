@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Poppins:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#4daf54), to(#3d8880));
+  background: linear-gradient(to right, #4daf54, #3d8880);
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.card {
+  margin: auto;
+  height: 370px;
+  width: 320px;
+  background-color: #272d40;
+  color: white;
+  margin-top: 10%;
+  border-radius: 15px;
+  padding: 40px 20px;
+  position: relative;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.card .card_heart {
+  top: 12px;
+  font-size: 25px;
+  position: absolute;
+}
+
+.card .card_cart {
+  font-size: 25px;
+  top: 12px;
+  position: absolute;
+  right: 15px;
+}
+
+.card .card_img {
+  width: 90%;
+}
+
+.card .card_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.card .card_title {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.card .card_title h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #4daf54;
+  margin-bottom: 10px;
+}
+
+.card .card_price {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.card .card_size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  margin-top: 150px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.card .card_size h3 {
+  margin-right: 10px;
+}
+
+.card .card_size span {
+  padding: 0 10px;
+  background-color: #dadada;
+  color: #272d40;
+  border-radius: 3px;
+  margin: 0 5px;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card .card_color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.card .card_color h3 {
+  margin-right: 10px;
+}
+
+.card .card_color span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card .card_color .green {
+  background-color: green;
+}
+
+.card .card_color .red {
+  background-color: red;
+}
+
+.card .card_color .black {
+  background-color: black;
+}
+
+.card .card_action {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.card .card_action button {
+  border: none;
+  outline: none;
+  background-color: #4daf54;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card:hover img {
+  -webkit-transform: translateY(-90px) rotate(-20deg);
+          transform: translateY(-90px) rotate(-20deg);
+}
+
+.card:hover .card_title {
+  -webkit-transform: translate(-37px, -80px);
+          transform: translate(-37px, -80px);
+}
+
+.card:hover .card_price {
+  -webkit-transform: translate(-118px, -80px);
+          transform: translate(-118px, -80px);
+}
+
+.card:hover .card_size, .card:hover .card_color, .card:hover .card_action {
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  visibility: visible;
+  opacity: 10;
+}
+
+.card_action button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.card_color span:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.card_size span:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+/*# sourceMappingURL=style.css.map */
