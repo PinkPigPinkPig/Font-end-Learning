@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Popup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css" integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="btn-open-modal">Open Modal</button>
+        <div class="modal hide">
+            <div class="modal-popup">
+                <div class="modal-popup-header">
+                    <p>Welcome to my Modal</p>
+                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="modal-popup-content">
+                    <h2>Modal</h2>
+                    <p>Modal Content</p>
+                </div>
+                <div class="modal-popup-footer">
+                    <button>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+@-webkit-keyframes showModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes showModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.container {
+  height: 100vh;
+  background-image: linear-gradient(45deg, #4158d0 0%, #c850c0 50%, #ffcc70 100%);
+}
+
+.container .btn-open-modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container .btn-open-modal:hover {
+  background-color: #e9a339;
+}
+
+.container .modal {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container .modal .modal-popup {
+  width: 450px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-animation: showModal linear 0.2s;
+          animation: showModal linear 0.2s;
+  margin: 200px auto;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .modal .modal-popup .modal-popup-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #e26e70;
+  padding: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.container .modal .modal-popup .modal-popup-header a {
+  color: white;
+}
+
+.container .modal .modal-popup .modal-popup-content {
+  padding: 15px;
+}
+
+.container .modal .modal-popup .modal-popup-content h2 {
+  color: #e26e70;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container .modal .modal-popup .modal-popup-content p {
+  font-size: 20px;
+}
+
+.container .modal .modal-popup .modal-popup-footer {
+  text-align: right;
+  padding: 15px;
+}
+
+.container .modal .modal-popup .modal-popup-footer button {
+  border: none;
+  outline: none;
+  background-color: #e26e70;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.container .hide {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
