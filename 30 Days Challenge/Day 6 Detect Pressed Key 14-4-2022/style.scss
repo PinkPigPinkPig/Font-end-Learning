@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 5px solid white;
+}
+
+.container{
+    background-color: #17a2b8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .display-value{
+        width: 250px;
+        height: 250px;
+        .big-num{
+            color: white;
+            font-size: 70px;
+            font-weight: bold;
+        }
+    }
+}
