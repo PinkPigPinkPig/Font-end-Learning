@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    background: linear-gradient(to right, rgb(248, 149, 199),rgb(250, 65, 173));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-range{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-range input{
+    width: 100px;
+    height: 70px;
+    margin: 0 30px;
+    font-size: 25px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-start{
+    color: white;
+    font-size: 40px;
+    outline: none;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: rgb(248, 149, 199);
+    transition: 1s;
+    cursor: pointer;
+}
+
+#btn-start:hover{
+    background-color: white;
+    color: rgb(248, 149, 199);
+}
