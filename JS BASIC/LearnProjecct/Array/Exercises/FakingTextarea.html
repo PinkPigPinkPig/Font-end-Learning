@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="textarea"  id = "txtValue" onkeydown="typeText();">
+</body>
+<script>
+    str = 'Tôi không bê đê'
+    array = str.split('')
+    var textArea = document.getElementById('txtValue');
+    var i = 0;
+    var sout = '';
+    var strTextArea = ''
+    function typeText(){
+        
+
+
+        sout += array[i];
+        textArea.value = '';
+        textArea.value = sout;
+        i++;
+    }
+
+</script>
+</html>
