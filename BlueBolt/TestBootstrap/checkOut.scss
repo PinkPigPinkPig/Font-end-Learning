@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 100vh;
+    .form{
+        max-width: 600px;
+        height: fit-content;
+        background-color: white;
+        margin-top: 50px;
+        border-top: 5px solid blue;
+
+        .product{
+            background-color: #f7fbff;
+
+            .product__title{
+                border-bottom: 1px solid grey;
+            }
+
+            .product__total{
+                border-top: 1px solid grey;
+            }
+        }
+        .credit{
+            .credit__title{
+                border-bottom: 1px solid grey;
+            }
+        }
+    }
+}
