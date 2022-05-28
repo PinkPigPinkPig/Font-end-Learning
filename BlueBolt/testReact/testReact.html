@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="root">
+        <!-- <form action="#">
+            Number 1: <input id="number1" type="text">
+            Number 2: <input id="number2" type="text">
+            Sum: <input id="sum" type="text">
+            <button id="btn"></button>
+        </form> -->
+
+    </div>
+
+</body>
+<script type="text/babel">
+    class Add extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                number1: 0,
+                number2: 0,
+                result: 0
+            }
+        }
+
+        Calculate = () => {
+            this.setState({
+                result: parseInt(this.state.number1,10)+parseInt(this.state.number2,10)
+            })
+        }
+
+        render() {
+            return (
+                <div>
+                    <h2>Adding two numbers</h2>
+                    <form action="#">
+                        Number 1: <input onChange={(e)=>this.setState({number1:e.target.value})} type="text" />
+                        Number 2: <input onChange={(e)=>this.setState({number2:e.target.value})} type="text" />
+                        Sum: <input value={this.state.result} type="text" />
+                        <button onClick = {this.Calculate}>Sum</button>
+                    </form>
+                </div>
+            )
+        }
+    }
+    const domContainer = document.getElementById('root');
+    const root = ReactDOM.createRoot(domContainer);
+    root.render((<Add />));
+
+</script>
+
+</html>
