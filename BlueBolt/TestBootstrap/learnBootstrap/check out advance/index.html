@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out Advance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-light">
+    <div class="container-fluid">
+        <div class="row my-5">
+            <div class="col-6 offset-3">
+                <div class="row">
+                    <div class="col-12 text-center p-5">
+                        <img class="mx-auto" src="./images/bootstrap-logo.svg" width="72" height="57" alt="">
+                        <h2>Checkout Form</h2>
+                        <p>Below is an example form built entirely with Bootstrap’s form controls. Each required form
+                            group has
+                            a validation state that can be triggered by attempting to submit the form without completing
+                            it.</p>
+                    </div>
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <h3>Billing address</h3>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <label for="">First name</label>
+                                        <input id="" type="text" class="form-control" placeholder="" aria-label="r"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="">Last name</label>
+                                        <input id="" type="text" class="form-control" placeholder="" aria-label="r"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="d-block" for="">Username</label>
+                                        <div class="input-group flex-nowrap">
+                                            <span class="input-group-text" id="addon-wrapping">@</span>
+                                            <input type="text" class="form-control" placeholder="Username"
+                                                aria-label="Username" aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="card-holder">Email <span
+                                                class="text-muted">(Optional)</span></label>
+                                        <input id="card-holder" type="email" class="form-control"
+                                            placeholder="you@example.com" aria-label="" aria-label="Card Holder"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="card-holder">Address</label>
+                                        <input id="card-holder" type="text" class="form-control"
+                                            placeholder="1234 Mainst" aria-label="Card Holder"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="card-holder">Address<span
+                                                class="text-muted">(Optional)</span></label>
+                                        <input id="card-holder" type="text" class="form-control"
+                                            placeholder="Apartment or suite" aria-label="Card Holder"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <label for="card-holder">Country</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">United States</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="card-holder">State</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">California</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-3">
+                                                <label for="card-holder">Zip</label>
+                                                <input id="card-holder" type="text" class="form-control" placeholder=""
+                                                    aria-label="" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="my-3">
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Shipping address is the same as my billing address
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Save this information for next time
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <hr class="my-3">
+                                    <div class="col-12 mb-3">
+                                        <h3>Payment</h3>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                id="exampleRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                Credit container-fluid
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                id="exampleRadios2" value="option2">
+                                            <label class="form-check-label" for="exampleRadios2">
+                                                Debit Card
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                id="exampleRadios3" value="option3">
+                                            <label class="form-check-label" for="exampleRadios3">
+                                                Paypal
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label for="">Name on card</label>
+                                                <input id="" type="text" class="form-control" placeholder=""
+                                                    aria-label="r" aria-describedby="basic-addon1">
+                                                <div id="emailHelp" class="form-text">Full name as displayed on card
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="">Credit card number</label>
+                                                <input id="" type="text" class="form-control" placeholder=""
+                                                    aria-label="r" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label for="">Expiration</label>
+                                                <input id="" type="text" class="form-control" placeholder=""
+                                                    aria-label="r" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="">CVV</label>
+                                                <input id="" type="text" class="form-control" placeholder=""
+                                                    aria-label="r" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="my-3">
+                                    <div class="col-12 mt-4">
+                                        <div class="d-grid">
+                                            <button class="btn btn-primary" type="button">Continue to checkout</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-12 mb-3 d-flex justify-content-between align-items-center">
+                                <h3 class="text-primary">Your Cart</h3>
+                                <span class="badge bg-primary rounded-pill fs-4">3</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <ul class="list-group">
+                                <li class="list-group-item ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Product name</h5>
+                                        <span>$12</span>
+                                    </div>
+                                    <small>Brief description</small>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Second product</h5>
+                                        <span>$12</span>
+                                    </div>
+                                    <small>Brief description</small>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Third product</h5>
+                                        <span>$5</span>
+                                    </div>
+                                    <small>Brief description</small>
+                                </li>
+                                <li class="list-group-item list-group-item-action list-group-item-success">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Promo code</h5>
+                                        <span>$-5</span>
+                                    </div>
+                                    <small>EXAMPLECODE</small>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Total</h5>
+                                        <span>$20</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <form class="card p-2">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Promo code">
+                                  <button type="submit" class="btn btn-secondary">Redeem</button>
+                                </div>
+                              </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
