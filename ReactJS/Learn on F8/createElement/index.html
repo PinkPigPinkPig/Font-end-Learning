@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+<script>
+
+    // React.createElement(type, props, children)
+    const h1React = React.createElement('1', {
+        title: 'hello',
+        class: "heading"
+        
+    }, 'Hello Guys')
+
+    const postItem = React.createElement(
+        'div',
+        {
+            className: 'post-item',
+        },
+        React.createElement(
+            'h2',
+            {
+                title: 'Hoc react tai F8'
+            },
+            'Hoc ReactJS'
+        ),
+        React.createElement(
+            'p',
+            {},
+            'Hoc ReactJS tu co ban'
+        )
+        
+    )
+
+    const container = document.getElementById('root')
+    const root = ReactDOM.createRoot(container)
+    root.render(postItem)
+
+    
+
+   
+    
+</script>
+</html>

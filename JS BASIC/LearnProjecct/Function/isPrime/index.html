@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inputNum" type="text">
+    <p id="result"></p>
+    <button id="check">Check</button>
+</body>
+<script>
+    function isPrime(number) {
+        if(number < 2){
+            return `${number} is not a prime`
+        }
+        else{
+            for(var i = 2; i < number; i++){
+                if(number % i == 0){
+                    return `${number} is not a prime`
+                }
+            }
+
+            return `${number} is a prime`
+        }
+    }
+
+    let result = document.getElementById('result')
+    let inputNum = document.getElementById('inputNum')
+    let check = document.getElementById('check')
+
+    check.onclick = function(){
+        result.innerHTML = isPrime(inputNum.value)
+    }
+</script>
+</html>

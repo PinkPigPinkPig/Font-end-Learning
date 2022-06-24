@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div id="toast">
+        <!-- <div class="toast toast--success">
+            <div class="toast__icon">
+                <i class = "fa fa-circle-check"></i>
+            </div>
+            <div class="toast__body">
+                <h3 class="coast__title">Success</h3>
+                <p class="coast__msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="toast__close">
+                <i class="fa fa-xmark"></i>
+            </div>
+        </div> -->
+
+    </div>
+    <div class="btn"><p>Show Success</p></div>
+    
+</body>
+<script>
+    function toast({
+        type = 'info',
+        title = 'Info',
+        msg = '',
+        icon = icons.info,
+        duration = 3000
+    }
+    ) {
+        let main = document.getElementById('toast')
+        if (main) {
+            const toast = document.createElement('div')
+            toast.classList.add('toast', `toast--${type}`)
+
+            toast.innerHTML = `
+            <div class="toast__icon">
+                <i class = "${icon}"></i>
+            </div>
+            <div class="toast__body">
+                <h3 class="coast__title">${title}</h3>
+                <p class="coast__msg">${msg}</p>
+            </div>
+            <div class="toast__close">
+                <i class="fa fa-xmark"></i>
+            </div> `
+
+            main.appendChild(toast)
+
+        }
+    }
+    const icons = {
+        success: 'fa fa-circle-check',
+        info: 'fa fa-info',
+        warning: 'fa fa-warning',
+        error: 'fa-regular fa-bug'
+    }
+
+    toast({
+        type: 'error',
+        title: 'Error',
+        msg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        icon: icons.error,
+        duration: 3000
+    })
+</script>
+</html>
